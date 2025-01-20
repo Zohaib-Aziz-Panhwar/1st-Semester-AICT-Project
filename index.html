@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flavour Hub - Supper delicious Burger in town!</title>
+
  <!-- 
     - custom js link
   -->
@@ -57,18 +58,18 @@
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
           <li class="nav-item">
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
           </li>
          
           <li class="nav-item">
             <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
           </li>
           <li class="nav-item">
-            <a href="blog.html" class="navbar-link" data-nav-link>Blog</a>
+            <a href="ordernow.html" class="navbar-link" data-nav-link>Order now</a>
           </li>
 
           <li class="nav-item">
-            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
           </li>
 
         </ul>
@@ -79,8 +80,10 @@
           <ion-icon name="search-outline"></ion-icon>
         </button>
 
-        <button class="btn btn-hover">Reservation</button>
-
+        <a href="ok.html">
+          <button class="btn btn-hover">Reservation</button>
+      </a>
+      
         <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
           <span class="line top"></span>
           <span class="line middle"></span>
@@ -114,10 +117,13 @@
       <section class="hero">
         <div class="container">
           <div class="hero-content">
-            <p class="hero-subtitle">Eat Sleep And Super</p>
-            <h2 class="h1 hero-title">delicious Burger </h2>
+            <h5 class="hero-subtitle">Eat Sleep And Super</h5>
+            <h1 class="h1 hero-title">delicious Burger </h1>
             <p class="hero-text"></p>
-            <button class="btn">Book A Table</button>
+            <a href="ok.html">
+              <button class="btn">Book A Table</button>
+          </a>
+          
           </div>
           <figure class="hero-banner">
             <img src="hero-banner-bg.png" width="820" height="716" alt="" aria-hidden="true"
@@ -134,238 +140,151 @@
             Our Delicious <span class="span">Foods</span>
           </h2>
           <p class="section-text">
-            Food is any substance consumed to provide nutritional support for an organism.
+            Eat healthy, live happily
           </p>
           <ul class="fiter-list">
             <li>
-              <button class="filter-btn  active">All</button>
+              <a href="softdrinks.html">
+                <button class="filter-btn">Soft Drinks</button>
+              </a>
             </li>
-
             <li>
-              <button class="filter-btn">Soft Drinks</button>
+              <a href="fries.html">
+                <button class="filter-btn">French Fry</button>
+              </a>
             </li>
-
             <li>
-              <button class="filter-btn">French Fry</button>
+              <a href="chicken.html">
+                <button class="filter-btn">Chicken Masala Broast</button>
+              </a>
             </li>
-
             <li>
-              <button class="filter-btn">Chicken Masala</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Deserts</button>
+              <a href="deserts.html">
+                <button class="filter-btn">Desserts</button>
+              </a>
             </li>
 
           </ul>
-
-          <ul class="food-menu-list">
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="img1.jpg" width="300" height="300" loading="lazy"
-                    alt="white karhai" class="w-100">
-                  <div class="badge">-15%</div>
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">desi</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Our Top-notch menus</title>
+              <style>
+                  body {
+                      font-family: Arial, sans-serif;
+                      text-align: center;
+                      margin: 20px;
+                      background-color: white;
+                  }
+          
+                  h1 {
+                      margin-bottom: 20px;
+                  }
+          
+                  .menu-container {
+                      display: flex;
+                      flex-wrap: wrap; 
+                      justify-content: center; 
+                      gap: 20px; 
+                  }
+          
+                  .broast {
+                      border: 1px solid #ddd;
+                      border-radius: 5px;
+                      padding: 20px;
+                      background-color: #fff;
+                      width: 300px; /* Fixed width for broast cards */
+                      text-align: center;
+                      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                  }
+          
+                  .broast img {
+                      width: 190px; /* Increased image size */
+                      height: 170px; /* Set fixed height for images */
+                      margin: 10px 0;
+                      border-radius: 5px;
+                  }
+                  .broast h3 {
+                      margin: 10px 0 5px;
+                      color: #333;
+                  }
+                  .broast p {
+                      color: #555;
+                      margin-bottom: 10px;
+                  }
+                  .order-button {
+                      display: inline-block;
+                      background-color: red; 
+                      color: white;
+                      padding: 10px 20px;
+                      font-size: 14px;
+                      font-weight: bold;
+                      border: none;
+                      border-radius: 5px;
+                      cursor: pointer;
+                      text-decoration: none; 
+                  }
+                  .order-button:hover {
+                      background-color: red; 
+                  }
+                  /* Responsive Dsign */
+                  @media (max-width: 768px) {
+                      .broast {
+                          width: 45%; 
+                      }
+                  }
+                  @media (max-width: 480px) {
+                      .broast {
+                          width: 100%; 
+                      }
+                  }
+              </style>
+          </head>
+          <body>
+              <h1>Our Top-notch Menu</h1>
+              <div class="menu-container">
+                  <div class="broast">
+                      <img src="img1.jpg" alt="Spicy Broast">
+                      <h3>White Karahai</h3>
+                      <p>Price: 799</p>
+                      <a href="order.html" class="order-button">Order Now</a>
                   </div>
-                </div>
-
-                <h3 class="h3 card-title">White karhai</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price">1700</data>
-
-                  <del class="del" value="69.00">2500</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="img2.jpg" width="200" height="100" loading="lazy"
-                    alt="Biryani" class="w-100">
-                  <div class="badge">-10%</div>
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-                <div class="wrapper">
-                  <p class="category"></p>
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                  <div class="broast">
+                      <img src="img2.jpg" alt="Garlic Broast">
+                      <h3>Biryani</h3>
+                      <p>Price: 400</p>
+                      <a href="order.html" class="order-button">Order Now</a>
                   </div>
-                </div>
-                <h3 class="h3 card-title">Biryani</h3>
-                <div class="price-wrapper">
-                  <p class="price-text">Price:</p>
-                  <data class="price" value="29.00">400</data>
-                  <del class="del">540</del>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="food-menu-card">
-                <div class="card-banner">
-                  <img src="img3.jpg" width="300" height="700" loading="lazy"
-                    alt="White Castle Pizzas" class="w-100">
-
-                  <div class="badge">-25%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Pizzas</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                  <div class="broast">
+                      <img src="img3.jpg" alt="Zinger Broast">
+                      <h3>Zinger Burger</h3>
+                      <p>Price: 310</p>
+                      <a href="order.html" class="order-button">Order Now</a>
                   </div>
-                </div>
-
-                <h3 class="h3 card-title">Zinger Burger</h3>
-                <div class="price-wrapper">
-                  <p class="price-text">Price:</p>
-                  <data class="price" value="310.00">310</data>
-                  <del class="del">500</del>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="img4.jpg" width="300" height="300" loading="lazy"
-                    alt="Bell Burrito Supreme" class="w-100">
-
-                  <div class="badge">-20%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Pizza</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                  <div class="broast">
+                      <img src="img4.jpg" alt="BBQ Broast">
+                      <h3>Pizza</h3>
+                      <p>Price: 999</p>
+                      <a href="order.html" class="order-button">Order Now</a>
                   </div>
-                </div>
-
-                <h3 class="h3 card-title">Pizza</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="1400.00 ">1500</data>
-
-                  <del class="del">2000</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="img5.jpg" width="300" height="300" loading="lazy"
-                    alt="Kung Pao Chicken BBQ" class="w-100">
-
-                  <div class="badge">-5%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Chrispy Chicken Broast</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                  <div class="broast">
+                      <img src="img5.jpg" alt="Cheese Broast">
+                      <h3>Chicken Broast</h3>
+                      <p>Price: 410</p>
+                      <a href="order.html" class="order-button">Order Now</a>
                   </div>
-                </div>
-
-                <h3 class="h3 card-title">Crispy Chicken Broast</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">460</data>
-                  <del class="del">600</del>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="food-menu-card">
-                <div class="card-banner">
-                  <img src="img6.jpg" width="300" height="300" loading="lazy"
-                    alt="Wendy's Chicken" class="w-100">
-
-                  <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-                <div class="wrapper">
-                  <p class="category">Chicken</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                  <div class="broast">
+                      <img src="img6.jpg" alt="Herb Broast">
+                      <h3>Regular Lasagna</h3>
+                      <p>Price: 789</p>
+                      <a href="order.html" class="order-button">Order Now</a>
                   </div>
-                </div>
-                <h3 class="h3 card-title">Chicken Lasagna Regular</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-                  <data class="price" value="500">550</data>
-                  <del class="del">700</del>
-                </div>
               </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      </main>
+          </body>
+          </html>
+          
   <!-- 
     - #FOOTER
   -->
@@ -385,25 +304,25 @@
           <ul class="social-list">
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.facebook.com/" class="social-link">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg5MhIIAhAAGEMYgwEYsQMYgAQYigUyDAgDEAAYQxiABBiKBTIGCAQQRRg8MgYIBRBFGD0yBggGEEUYPTIGCAcQRRg80gEIMzAxNWowajmoAgiwAgE" class="social-link">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/" class="social-link">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.pinterest.com/" class="social-link">
                 <ion-icon name="logo-pinterest"></ion-icon>
               </a>
             </li>
